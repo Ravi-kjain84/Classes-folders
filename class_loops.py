@@ -75,7 +75,7 @@ class MasterClass:
 def run_for_each_folder(main_folder, output_base_folder):
     # Get the list of subdirectories
     subdirectories = [d for d in os.listdir(main_folder) if os.path.isdir(os.path.join(main_folder, d))]
-
+    print(subdirectories)
     # Loop through each subdirectory
     for subdir in subdirectories:
         # Create an input variable based on the folder name or some other logic
@@ -95,7 +95,7 @@ def run_for_each_folder(main_folder, output_base_folder):
 main_data_folder = 'data'
 output_base_folder = 'output'
 
-
+print("here")
 
 # Run the function for each subdirectory in the main data folder
 run_for_each_folder(main_data_folder, output_base_folder)
